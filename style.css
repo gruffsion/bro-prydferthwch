@@ -12,6 +12,10 @@ svg {
     /* height: auto; is still valid here for maintaining aspect ratio */
     /* Other desktop-specific styles if needed */
 }
+#controls button {
+    padding: 8px;
+    font-size: 0.8em; /* Adjust font size if needed */
+}
 }
 
 .st0 {
@@ -153,20 +157,14 @@ a.selected .label {
 }
 
 #controls button {
-    flex: 0 0 auto; /* Do not grow or shrink */
-    width: 8vw; /* Adjust the width as needed */
-    height: 3vw; /* Adjust the height to maintain 16:9 aspect ratio */
-    margin: 2px;
-    /* padding: 5px; */
-    background-color: #6e6e6e;
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em; /* Adjust the font size for the symbols */
 }
 
 #controls button:hover {
