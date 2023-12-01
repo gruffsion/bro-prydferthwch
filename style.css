@@ -26,10 +26,10 @@ svg {
 /* Style for the circle */
 @keyframes pulse {
 0%, 100% {
-    r: 50; /* Original radius */
+    r: 70; /* Original radius */
 }
 50% {
-    r: 65; /* Radius during the pulse (increase this value for a larger pulse) */
+    r: 85; /* Radius during the pulse (increase this value for a larger pulse) */
 }
 }
 
@@ -46,6 +46,7 @@ transform: translateY(40px);
 font-size: 3.7rem;
 text-anchor: middle;
 fill: #593A28;
+visibility: hidden;
 }
 
 a:hover .area,
