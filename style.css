@@ -19,17 +19,9 @@ svg {
 }
 
 .st0 {
-animation: colorChange 10s infinite; /* Adjust the duration as needed */
+   fill: #F2D888;
 }
 
-@keyframes colorChange {
-0%, 100% {
-    fill: #E4F279; /* Starting and ending color (green) */
-}
-50% {
-    fill: #B2D8B2; /* Mid-transition color (light green) */
-}
-}
 
 /* Style for the circle */
 @keyframes pulse {
@@ -37,14 +29,14 @@ animation: colorChange 10s infinite; /* Adjust the duration as needed */
     r: 50; /* Original radius */
 }
 50% {
-    r: 60; /* Radius during the pulse (increase this value for a larger pulse) */
+    r: 65; /* Radius during the pulse (increase this value for a larger pulse) */
 }
 }
 
 .area {
 /* Apply the animation */
-fill: #ff5e00;
-animation: pulse 2s infinite; /* Adjust the duration as needed */
+fill: #593A28;
+animation: pulse 3s infinite; /* Adjust the duration as needed */
 }
 
 /* Style for the label */
@@ -53,20 +45,21 @@ font-family: Arial, sans-serif;
 transform: translateY(40px);   
 font-size: 3.7rem;
 text-anchor: middle;
-fill: #F25C05;
-font-weight: bold;
+fill: #593A28;
 }
 
 a:hover .area,
 a:hover .label {
-fill: #BCA2F2;
+fill: #d77d75;
 transition: fill 0.1s ease;
 }
 
 a.selected .area,
 a.selected .label {
-    fill: #BCA2F2;
+    fill: #D9564A;
     transition: fill 0.3s ease;
+    font-weight: bold;
+
 }
 
 #audioPlayer {
@@ -76,13 +69,14 @@ a.selected .label {
     width: 100%;
     max-width: 300px; /* Adjust as needed */
     margin: auto;
-    background: #cfcfcf;
+    background: #BABABF;
     padding: 10px;
     border-radius: 5px;
 }
 
 .audio-column {
     width: 300px;
+    color: #D9564A;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,7 +84,7 @@ a.selected .label {
 
 
 #artistInfo {
-    font-size: 0.8em;
+    font-size: 1em;
     font-family: sans-serif;
     line-height: 1.2em; /* Adjust based on your font size */
     height: 2.4em; /* 2 lines of text */
@@ -106,7 +100,7 @@ a.selected .label {
 }
 
 #trackInfo {
-    font-size: 1em;
+    font-size: 1.4em;
     font-family: sans-serif;
     margin-bottom: 5px;
     font-weight: bold;
@@ -136,7 +130,7 @@ a.selected .label {
     appearance: none;
     width: 15px; /* Adjust as needed */
     height: 15px; /* Adjust as needed */
-    background-color: #6e6e6e;
+    background-color: #593A28
 }
 
 #seekSlider::-moz-range-thumb {
@@ -160,13 +154,13 @@ a.selected .label {
     flex: 1;
     margin: 5px;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
+    background-color: white;
+    color: #BABABF;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #controls button:hover {
-    background-color: #0056b3;
+    background-color: #F2D888;
 }
