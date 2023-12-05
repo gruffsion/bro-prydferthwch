@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const artistInfo = document.getElementById('artistInfo');
     const trackInfo = document.getElementById('trackInfo');
     const areas = document.querySelectorAll('a[data-audio-url]');
-    const volumeSlider = document.getElementById('volumeSlider');
-
+  
 
     // Function to play audio from a given URL
     function playAudioFromUrl(url) {
@@ -114,9 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
         audio.currentTime = seekSlider.value;
     });
    
-    volumeSlider.addEventListener('input', function() {
-        audio.volume = volumeSlider.value;
-    });
+   
     
 
 });
