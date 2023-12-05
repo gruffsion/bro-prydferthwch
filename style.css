@@ -26,7 +26,7 @@ svg {
 /* Style for the circle */
 @keyframes pulse {
 0%, 100% {
-    r: 70; /* Original radius */
+    r: 75; /* Original radius */
 }
 50% {
     r: 85; /* Radius during the pulse (increase this value for a larger pulse) */
@@ -153,8 +153,8 @@ a.selected .label {
 
 #controls button {
     flex: 1;
-    margin: 5px;
-    padding: 10px;
+    margin: 3px;
+    padding: 5px;
     background-color: white;
     color: #BABABF;
     border: none;
@@ -165,3 +165,111 @@ a.selected .label {
 #controls button:hover {
     background-color: #F2D888;
 }
+
+.wrapper {
+    position: relative;
+  }
+  
+  .volume-wrapper input[type=range] {
+    -webkit-appearance: none; 
+    max-width: 7rem;
+    width: 100%; 
+    background: transparent; 
+  }
+  
+  .volume-wrapper input[type=range]:focus {
+    outline: none;
+  }
+  
+  .volume-wrapper input[type=range]::-webkit-slider-runnable-track {
+    height: 0.9rem;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+    background: #464646;
+    background: linear-gradient(
+      to bottom right, 
+      transparent 50%,
+      white 50%
+    );
+  }
+  
+  .volume-wrapper input[type=range]::-moz-range-track {
+    height: 0.9rem;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+    background: #464646;
+    background: linear-gradient(
+      to bottom right, 
+      transparent 50%,
+     white 50%
+    );
+  }
+  
+  .volume-wrapper input[type=range]::-ms-track {
+    height: 0.9rem;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+    color: transparent;
+    background: #464646;
+    border: 0;
+    background: linear-gradient(
+      to bottom right, 
+      transparent 50%,
+      #464646 50%
+    );
+  }
+  
+  .volume-wrapper input[type=range]::-ms-fill-lower {
+   background: transparent;
+  }
+  
+  .volume-wrapper input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1.5rem;
+    width: 0.5rem;
+    background:  #593A28;
+    margin-top: -5px;
+    cursor: pointer;
+  }
+
+  
+  .volume-wrapper input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 1.5rem;
+    width: 0.5rem;
+    background:  #593A28;
+    border: 1px solid;
+    border-radius: 3px; 
+    cursor: pointer;
+    margin-top: 0;
+  }
+  
+  .volume-wrapper input[type=range]:focus::-moz-range-thumb {
+    box-shadow: 0px 0px 7px 3px #0065c4;
+  }
+  
+  .volume-wrapper input[type=range]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 0.75rem;
+    width: 0.5rem;
+    background:  #593A28;
+    border: 1px solid;
+    margin-top: 0;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  
+  .visually-hidden { 
+      position: absolute !important;
+      height: 1px; 
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap; /* added line */
+  }
+
